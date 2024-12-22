@@ -21,7 +21,7 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             À propos de moi
           </h1>
-          <div className="grid lg:grid-cols-2 gap-12 items-start min-h-screen">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <Card>
                 <CardContent className="p-6">
@@ -97,24 +97,22 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="min-h-screen flex flex-col justify-evenly">
-            <Card>
-              <CardHeader>
-                <CardTitle>Compétences techniques</CardTitle>
-              </CardHeader>
-              <CardContent>
-                {skills.map((skill, index) => (
-                  <div key={index} className="mb-4">
-                    <div className="flex justify-between mb-1">
-                      <span>{skill.name}</span>
-                      <span>{skill.level}%</span>
-                    </div>
-                    <Progress value={skill.level} className="w-full" />
+          <Card>
+            <CardHeader>
+              <CardTitle>Compétences techniques</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {skills.map((skill, index) => (
+                <div key={index} className="mb-4">
+                  <div className="flex justify-between mb-1">
+                    <span>{skill.name}</span>
+                    <span>{skill.level}%</span>
                   </div>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
+                  <Progress value={skill.level} className="w-full" />
+                </div>
+              ))}
+            </CardContent>
+          </Card>
         </div>
       </div>
     </Layout>

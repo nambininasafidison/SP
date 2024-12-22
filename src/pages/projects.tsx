@@ -4,7 +4,7 @@ import { ProjectsSection } from "@/components/sections/projects-section";
 export default function ProjectsPage() {
   return (
     <Layout>
-      <div className="py-24 bg-background min-h-screen flex flex-col justify-evenly">
+      <div className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">
             Mes Projets

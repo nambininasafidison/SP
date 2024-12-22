@@ -27,8 +27,8 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section className="py-24 bg-background ">
-      <div className="container mx-auto px-6 min-h-screen flex flex-col justify-evenly">
+    <section className="py-24 bg-background">
+      <div className="container mx-auto px-6">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-12 text-center text-primary"
           initial={{ opacity: 0, y: 20 }}

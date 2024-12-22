@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export function ContactCTA() {
   return (
     <section className="py-24 bg-background">
-      <div className="container mx-auto px-6 min-h-screen flex flex-col justify-evenly">
+      <div className="container mx-auto px-6">
         <motion.div
           className="bg-muted rounded-lg p-12 text-center"
           initial={{ opacity: 0, y: 20 }}
