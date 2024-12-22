@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 24 100% 86%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 24 100% 86%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 24 100% 86%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 24 100% 86%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.loader {
+  width: 85px;
+  height: 50px;
+  --g1: conic-gradient(from 90deg at left 3px top 3px, #fff0 90deg, #000 0);
+  --g2: conic-gradient(
+    from -90deg at bottom 3px right 3px,
+    #fff0 90deg,
+    #000 0
+  );
+  background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
+  background-position: left, center, right;
+  background-repeat: no-repeat;
+  animation: l10 1s infinite alternate;
+}
+@keyframes l10 {
+  0%,
+  2% {
+    background-size: 25px 50%, 25px 50%, 25px 50%;
+  }
+  20% {
+    background-size: 25px 25%, 25px 50%, 25px 50%;
+  }
+  40% {
+    background-size: 25px 100%, 25px 25%, 25px 50%;
+  }
+  60% {
+    background-size: 25px 50%, 25px 100%, 25px 25%;
+  }
+  80% {
+    background-size: 25px 50%, 25px 50%, 25px 100%;
+  }
+  98%,
+  100% {
+    background-size: 25px 50%, 25px 50%, 25px 50%;
+  }
+}
