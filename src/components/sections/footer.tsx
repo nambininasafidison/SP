@@ -1,8 +1,10 @@
 import { ROUTES } from "@/lib/constants";
 import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-muted py-12">
       <div className="container mx-auto px-6">
@@ -15,15 +17,14 @@ export function Footer() {
               <span className="text-primary">/&gt;</span>
             </Link>
             <p className="mt-4 text-muted-foreground">
-              Développeur Full Stack passionné par la création de solutions
-              digitales innovantes.
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Quick Links Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">
-              Liens rapides
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
               {ROUTES.map((route) => (
@@ -32,7 +33,7 @@ export function Footer() {
                     to={route.path}
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {route.name}
+                    {t(`routes.${route.name}`)}
                   </Link>
                 </li>
               ))}
@@ -42,7 +43,7 @@ export function Footer() {
           {/* Social Media Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">
-              Suivez-moi
+              {t("footer.follow")}
             </h3>
             <div className="flex space-x-4">
               <a
@@ -91,7 +92,7 @@ export function Footer() {
 
         {/* Footer Bottom Section */}
         <div className="mt-8 pt-8 border-t border-muted-foreground text-center text-muted-foreground">
-          <p>&copy; 2024 Safidison. Tous droits réservés.</p>
+          <p>&copy; 2024 Safidison. {t("footer.copyright")}</p>
         </div>
       </div>
     </footer>

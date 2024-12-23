@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function ContactCTA() {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -13,18 +15,18 @@ export function ContactCTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            Prêt à concrétiser votre projet ?
+            {t("sections.contact.title")}
           </h2>
           <p className="text-xl mb-8 text-muted-foreground">
-            Contactez-moi dès aujourd'hui pour discuter de vos idées et les
-            transformer en réalité.
+            {t("sections.contact.description")}
           </p>
           <motion.button
             className="px-8 py-3 bg-primary text-primary-foreground rounded-md hover:bg-accent-hover transition-colors inline-flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Commencer un projet <ArrowRight className="ml-2 h-5 w-5" />
+            {t("sections.contact.apply")}{" "}
+            <ArrowRight className="ml-2 h-5 w-5" />
           </motion.button>
         </motion.div>
       </div>

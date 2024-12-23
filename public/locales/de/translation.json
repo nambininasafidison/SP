@@ -1,0 +1,139 @@
+{
+  "routes": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Dienstleistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "description": "Full Stack Entwickler, der leidenschaftlich innovative digitale Lösungen erstellt.",
+    "quickLinks": "Schnellzugriffe",
+    "follow": "Folge mir",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "sections": {
+    "hero": {
+      "title": "Full Stack Entwickler",
+      "target": "Schöpfer digitaler Lösungen",
+      "job": "Ich verwandle Ideen in leistungsstarke, elegante Web- und Mobilanwendungen.",
+      "project": "Sieh dir meine Projekte an",
+      "more": "Mehr erfahren"
+    },
+    "services": {
+      "title": "Meine Dienstleistungen",
+      "web": {
+        "type": "Webentwicklung",
+        "description": "Erstellung von responsiven und leistungsstarken Websites und Webanwendungen."
+      },
+      "mobile": {
+        "type": "Mobile Entwicklung",
+        "description": "Design von nativen und plattformübergreifenden mobilen Anwendungen."
+      },
+      "desktop": {
+        "type": "Desktop Anwendungen",
+        "description": "Entwicklung von Desktop-Software für Windows, macOS und Linux."
+      },
+      "api": {
+        "type": "Backend & API",
+        "description": "Erstellung robuster APIs und skalierbarer Backend-Systeme."
+      }
+    },
+    "projects": {
+      "title": "Aktuelle Projekte",
+      "web": {
+        "title": "Soziales Netzwerk",
+        "type": "Webentwicklung"
+      },
+      "mobile": {
+        "title": "FitTrack Pro",
+        "type": "Mobile Entwicklung"
+      },
+      "desktop": {
+        "title": "DataViz Dashboard",
+        "type": "Desktop Anwendungen"
+      },
+      "view": "Projekt ansehen"
+    },
+    "contact": {
+      "title": "Bereit, dein Projekt zu verwirklichen?",
+      "description": "Kontaktiere mich noch heute, um deine Ideen zu besprechen und sie in die Realität umzusetzen.",
+      "apply": "Projekt starten"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "Über mich",
+      "description": {
+        "experience": "Ich bin ein leidenschaftlicher Full Stack Entwickler mit über 2 Jahren Erfahrung in der Erstellung innovativer Web- und Mobilanwendungen.",
+        "stack": "Spezialisiert auf JavaScript, React, Node.js und Cloud-Technologien, strebe ich danach, elegante und leistungsstarke Lösungen zu schaffen, die den Bedürfnissen von Benutzern und Unternehmen gerecht werden."
+      },
+      "values": {
+        "title": "Meine Werte",
+        "list": [
+          "Kontinuierliches Lernen und technologische Überwachung",
+          "Codequalität und gute Entwicklungspraxis",
+          "Zusammenarbeit und effektive Kommunikation im Team",
+          "Kreative Problemlösung",
+          "Aufmerksamkeit für Details und Benutzererfahrung"
+        ]
+      },
+      "skills": {
+        "title": "Schlüsselkompetenzen",
+        "list": [
+          "Frontend-Entwicklung (React, Next.js)",
+          "Backend (Node.js, Express)",
+          "Mobile Entwicklung (React Native)",
+          "Datenbanken (SQL, NoSQL)",
+          "Cloud-Deployment",
+          "UI/UX Design"
+        ]
+      },
+      "badge": {
+        "experience": "2+ Jahre Erfahrung",
+        "title": "Full Stack Entwickler"
+      },
+      "technical": "Technische Fähigkeiten"
+    },
+    "services": {
+      "title": "Meine Dienstleistungen",
+      "description": "Ich biete eine vollständige Palette von Entwicklungsdiensten, um alle deine digitalen Bedürfnisse zu erfüllen."
+    },
+    "projects": {
+      "title": "Meine Projekte",
+      "description": "Entdecke eine Auswahl meiner neuesten und innovativsten Projekte."
+    },
+    "contact": {
+      "title": "Kontaktiere mich",
+      "description": "Zögere nicht, mich zu kontaktieren, um dein Projekt zu besprechen oder bei Fragen.",
+      "form": {
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "submit": "Absenden"
+      }
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "theme": "Dunkelmodus",
+      "language": "Sprache",
+      "navigation": "Navigation"
+    },
+    "notFound": {
+      "title": "Ups, Seite nicht gefunden!",
+      "description": "Entschuldigung, die Seite, nach der Sie suchen, existiert nicht oder wurde verschoben.",
+      "link": "Zur Startseite"
+    }
+  },
+  "language": {
+    "select": "Sprache wählen...",
+    "search": "Sprache suchen...",
+    "notFound": "Sprache nicht gefunden."
+  },
+
+  "others": {
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Nachricht.",
+    "captcha": "Bitte lösen Sie das CAPTCHA, bevor Sie absenden."
+  }
+}

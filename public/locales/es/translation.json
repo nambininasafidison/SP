@@ -1,0 +1,138 @@
+{
+  "routes": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "description": "Desarrollador Full Stack apasionado por crear soluciones digitales innovadoras.",
+    "quickLinks": "Enlaces rápidos",
+    "follow": "Sígueme",
+    "copyright": "Todos los derechos reservados."
+  },
+  "sections": {
+    "hero": {
+      "title": "Desarrollador Full Stack",
+      "target": "Creador de Soluciones Digitales",
+      "job": "Convierto ideas en aplicaciones web y móviles potentes y elegantes.",
+      "project": "Ver mis proyectos",
+      "more": "Aprender más"
+    },
+    "services": {
+      "title": "Mis Servicios",
+      "web": {
+        "type": "Desarrollo Web",
+        "description": "Creación de sitios web y aplicaciones web adaptativas y poderosas."
+      },
+      "mobile": {
+        "type": "Desarrollo Móvil",
+        "description": "Diseño de aplicaciones móviles nativas y multiplataforma."
+      },
+      "desktop": {
+        "type": "Aplicaciones de Escritorio",
+        "description": "Desarrollo de software de escritorio para Windows, macOS y Linux."
+      },
+      "api": {
+        "type": "Backend & API",
+        "description": "Creación de APIs robustas y sistemas backend escalables."
+      }
+    },
+    "projects": {
+      "title": "Proyectos Recientes",
+      "web": {
+        "title": "Red Social",
+        "type": "Desarrollo Web"
+      },
+      "mobile": {
+        "title": "",
+        "type": "Desarrollo Móvil"
+      },
+      "desktop": {
+        "title": "Tablero de Datos (DataViz)",
+        "type": "Aplicaciones de Escritorio"
+      },
+      "view": "Ver proyecto"
+    },
+    "contact": {
+      "title": "¿Listo para hacer realidad tu proyecto?",
+      "description": "Contáctame hoy para discutir tus ideas y hacerlas realidad.",
+      "apply": "Iniciar un proyecto"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "Sobre mí",
+      "description": {
+        "experience": "Soy un Desarrollador Full Stack con más de 2 años de experiencia en la creación de aplicaciones web y móviles innovadoras.",
+        "stack": "Me especializo en JavaScript, React, Node.js y tecnologías en la nube. Me esfuerzo por crear soluciones elegantes y potentes que satisfagan las necesidades de los usuarios y los negocios."
+      },
+      "values": {
+        "title": "Mis Valores",
+        "list": [
+          "Aprendizaje continuo y monitoreo tecnológico",
+          "Calidad de código y buenas prácticas de desarrollo",
+          "Colaboración y comunicación eficaz en equipo",
+          "Resolución creativa de problemas",
+          "Atención al detalle y a la experiencia del usuario"
+        ]
+      },
+      "skills": {
+        "title": "Habilidades Clave",
+        "list": [
+          "Desarrollo Frontend (React, Next.js)",
+          "Backend (Node.js, Express)",
+          "Desarrollo Móvil (React Native)",
+          "Bases de datos (SQL, NoSQL)",
+          "Despliegue en la nube",
+          "Diseño UI/UX"
+        ]
+      },
+      "badge": {
+        "experience": "2+ años de experiencia",
+        "title": "Desarrollador Full Stack"
+      },
+      "technical": "Habilidades técnicas"
+    },
+    "services": {
+      "title": "Mis Servicios",
+      "description": "Ofrezco una gama completa de servicios de desarrollo para satisfacer todas tus necesidades digitales."
+    },
+    "projects": {
+      "title": "Mis Proyectos",
+      "description": "Descubre una selección de mis proyectos más recientes e innovadores."
+    },
+    "contact": {
+      "title": "Contáctame",
+      "description": "No dudes en contactarme para discutir tu proyecto o hacer cualquier pregunta.",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Mensaje",
+        "submit": "Enviar"
+      }
+    },
+    "settings": {
+      "title": "Configuraciones",
+      "theme": "Modo oscuro",
+      "language": "Idioma",
+      "navigation": "Navegación"
+    },
+    "notFound": {
+      "title": "¡Vaya, página no encontrada!",
+      "description": "Lo siento, la página que buscas no existe o ha sido movida.",
+      "link": "Ir a la página de inicio"
+    }
+  },
+  "language": {
+    "select": "Seleccionar idioma...",
+    "search": "Buscar idioma...",
+    "notFound": "Idioma no encontrado."
+  },
+  "others": {
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje.",
+    "captcha": "Por favor, resuelve el CAPTCHA antes de enviar."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "routes": {
+    "home": "Fandraisana",
+    "about": "Momba ahy",
+    "services": "Tolotra",
+    "projects": "Tetikasa",
+    "contact": "Mifandraisa"
+  },
+  "footer": {
+    "description": "Mpanamboatra rindrambaiko Full Stack manam-pahaizana manokana amin'ny famoronana vahaolana dizitaly manavao.",
+    "quickLinks": "Rohy haingana",
+    "follow": "Araho aho",
+    "copyright": "Zo rehetra voaaro."
+  },
+  "sections": {
+    "hero": {
+      "title": "Mpanamboatra rindrambaiko Full Stack",
+      "target": "Mamorona vahaolana dizitaly",
+      "job": "Mamadika hevitra ho lasa tranonkala sy fampiharana finday matanjaka sy mirindra aho.",
+      "project": "Jereo ny tetikasa nataoko",
+      "more": "Fantaro bebe kokoa"
+    },
+    "services": {
+      "title": "Ny tolotra omenako",
+      "web": {
+        "type": "Famoronana tranonkala",
+        "description": "Mamokatra tranonkala sy fampiharana tranonkala mifanaraka amin'ny filàna."
+      },
+      "mobile": {
+        "type": "Famoronana fampiharana finday",
+        "description": "Famolavolana fampiharana finday eo an-toerana sy mifanentana."
+      },
+      "desktop": {
+        "type": "Fampiharana Desktop",
+        "description": "Famoronana rindrambaiko ho an'ny Windows, macOS, ary Linux."
+      },
+      "api": {
+        "type": "Backend & API",
+        "description": "Famoronana API azo antoka sy rafitra mpanome tolotra azo zohina."
+      }
+    },
+    "projects": {
+      "title": "Tetikasa farany nataoko",
+      "web": {
+        "title": "Tambajotra sosialy",
+        "type": "Famoronana tranonkala"
+      },
+      "mobile": {
+        "title": "FitTrack Pro",
+        "type": "Famoronana fampiharana finday"
+      },
+      "desktop": {
+        "title": "Dashboard DataViz",
+        "type": "Fampiharana Desktop"
+      },
+      "view": "Jereo ny tetikasa"
+    },
+    "contact": {
+      "title": "Vonona hanatanteraka ny tetikasanao ve ianao?",
+      "description": "Mifandraisa amiko anio mba hiresaka ny hevitrao ary hamadika azy ireo ho lasa zava-misy.",
+      "apply": "Atombohy ny tetikasa"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "Momba ahy",
+      "description": {
+        "experience": "Mpanamboatra rindrambaiko Full Stack manana traikefa mihoatra ny 2 taona amin'ny famoronana tranonkala sy fampiharana finday manavao aho.",
+        "stack": "Mahay manokana amin'ny JavaScript, React, Node.js, ary teknolojia rahona aho. Miezaka mamorona vahaolana mirindra sy matanjaka aho mba hahafeno ny filàn'ny mpampiasa sy ny orinasa."
+      },
+      "values": {
+        "title": "Ny soatoavina ijoroako",
+        "list": [
+          "Fianarana sy fanavaozana mitohy",
+          "Kalitaon'ny kaody sy fanao tsara amin'ny famoronana",
+          "Fiaraha-miasa sy fifandraisana mahomby ao anaty ekipa",
+          "Fahaizana mamaha olana amin'ny fomba feno famoronana",
+          "Fikarakarana antsipirihany sy fanatsarana ny traikefan'ny mpampiasa"
+        ]
+      },
+      "skills": {
+        "title": "Fahaiza-manao fototra",
+        "list": [
+          "Famoronana Frontend (React, Next.js)",
+          "Backend (Node.js, Express)",
+          "Famoronana fampiharana finday (React Native)",
+          "Tahirin-kevitra (SQL, NoSQL)",
+          "Teknolojia rahona",
+          "Famoronana UI/UX"
+        ]
+      },
+      "badge": {
+        "experience": "2+ taona traikefa",
+        "title": "Mpanamboatra Full Stack"
+      },
+      "technical": "Fahaiza-manao ara-teknika"
+    },
+    "services": {
+      "title": "Ny tolotra omenako",
+      "description": "Manolotra tolotra feno amin'ny famoronana rindrambaiko aho mba hahafeno ny filàna dizitaly rehetra."
+    },
+    "projects": {
+      "title": "Ny tetikasa nataoko",
+      "description": "Jereo ny lisitr'ireo tetikasa farany sy manavao indrindra nataoko."
+    },
+    "contact": {
+      "title": "Mifandraisa amiko",
+      "informations": {
+        "description": "Aza misalasala mifandray amiko mba hiresaka momba ny tetikasanao na hanontany fanontaniana.",
+        "email": "nambininasafidison@outlook.com",
+        "tel": "+261 34 78 398 61",
+        "address": "Antananarivo, Madagasikara"
+      },
+      "form": {
+        "name": "Anarana",
+        "email": "Adiresy mailaka",
+        "message": "Hafatra",
+        "submit": "Alefaso"
+      }
+    },
+    "settings": {
+      "title": "Fikirakirana",
+      "theme": "Lohahevitra maizina",
+      "language": "Fiteny",
+      "navigation": "Fizahana"
+    },
+    "notFound": {
+      "title": "Oups, pejy tsy hita!",
+      "description": "Azafady, ny pejy tadiavinao dia tsy misy na voafindra.",
+      "link": "Mandehana any amin'ny pejy fandraisana"
+    }
+  },
+  "language": {
+    "select": "Selecte ny fiteny...",
+    "search": "Mitady fiteny...",
+    "notFound": "Tsy hita ny fiteny."
+  },
+  "others": {
+    "success": "Hafatra alefa soa aman-tsara!",
+    "error": "Nisy hadisoana nandefa ny hafatra.",
+    "captcha": "Azafady, vahaolana ny CAPTCHA alohan'ny handefasana."
+  }
+}

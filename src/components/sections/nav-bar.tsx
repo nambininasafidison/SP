@@ -1,11 +1,13 @@
 import { ROUTES } from "@/lib/constants";
 import { motion } from "framer-motion";
+import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SwitchLanguage } from "../swicth-language";
 import { ToggleTheme } from "../ToggleTheme";
-import { Button } from "../ui/button";
-import { SDropdownMenu } from "../SDropdownMenu";
+import { useTranslation } from "react-i18next";
 
 export function NavBar() {
+  const { t } = useTranslation();
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -28,7 +30,7 @@ export function NavBar() {
                 to={route.path}
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                {route.name}
+                {t(`routes.${route.name}`)}
               </Link>
             </li>
           ))}
@@ -37,8 +39,13 @@ export function NavBar() {
         {/* Contact Button */}
         <div className="flex gap-2">
           <ToggleTheme className="lg:flex hidden" />
-          <Button className="px-4 py-2 lg:block hidden">Contactez-moi</Button>
-          <SDropdownMenu className="lg:hidden block" />
+          <SwitchLanguage className="lg:flex hidden" />
+          <Link
+            className="lg:hidden block"
+            to={import.meta.env.VITE_SETTINGS_ROUTE}
+          >
+            <Menu />
+          </Link>
         </div>
       </nav>
     </motion.header>

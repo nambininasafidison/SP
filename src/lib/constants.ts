@@ -8,9 +8,9 @@ export const COLORS = {
 };
 
 export const ROUTES = [
-  { name: "Accueil", path: "/" },
-  { name: "À propos", path: import.meta.env.VITE_ABOUT_ROUTE },
-  { name: "Services", path: import.meta.env.VITE_SERVICES_ROUTE },
-  { name: "Projets", path: import.meta.env.VITE_PROJECTS_ROUTE },
-  { name: "Contact", path: import.meta.env.VITE_CONTACT_ROUTE },
+  { name: "home", path: "/" },
+  { name: "about", path: import.meta.env.VITE_ABOUT_ROUTE },
+  { name: "services", path: import.meta.env.VITE_SERVICES_ROUTE },
+  { name: "projects", path: import.meta.env.VITE_PROJECTS_ROUTE },
+  { name: "contact", path: import.meta.env.VITE_CONTACT_ROUTE },
 ];

@@ -3,29 +3,30 @@ import mobile from "@/assets/mobile.png";
 import social from "@/assets/social.png";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-
-const projects = [
-  {
-    title: "Social Network",
-    category: "Web Development",
-    image: social,
-    link: "#",
-  },
-  {
-    title: "FitTrack Pro",
-    category: "Mobile App",
-    image: mobile,
-    link: "#",
-  },
-  {
-    title: "DataViz Dashboard",
-    category: "Desktop Application",
-    image: dashboard,
-    link: "#",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function ProjectsSection() {
+  const { t } = useTranslation();
+  const projects = [
+    {
+      title: t("sections.projects.web.title"),
+      category: t("sections.projects.web.type"),
+      image: social,
+      link: "#",
+    },
+    {
+      title: t("sections.projects.mobile.title"),
+      category: t("sections.projects.mobile.type"),
+      image: mobile,
+      link: "#",
+    },
+    {
+      title: t("sections.projects.desktop.title"),
+      category: t("sections.projects.desktop.type"),
+      image: dashboard,
+      link: "#",
+    },
+  ];
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -36,7 +37,7 @@ export function ProjectsSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Projets Récents
+          {t("sections.projects.title")}
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -64,7 +65,8 @@ export function ProjectsSection() {
                   href={project.link}
                   className="inline-flex items-center text-secondary-foreground hover:text-muted transition-colors"
                 >
-                  Voir le projet <ArrowUpRight className="ml-2 h-4 w-4" />
+                  {t("sections.projects.view")}{" "}
+                  <ArrowUpRight className="ml-2 h-4 w-4" />
                 </a>
               </div>
             </motion.div>

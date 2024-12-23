@@ -1,0 +1,138 @@
+{
+  "routes": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "Full Stack Developer passionate about creating innovative digital solutions.",
+    "quickLinks": "Quick Links",
+    "follow": "Follow me",
+    "copyright": "All rights reserved."
+  },
+  "sections": {
+    "hero": {
+      "title": "Full Stack Developer",
+      "target": "Creator of Digital Solutions",
+      "job": "I turn ideas into powerful and elegant web and mobile applications.",
+      "project": "See my projects",
+      "more": "Learn more"
+    },
+    "services": {
+      "title": "My Services",
+      "web": {
+        "type": "Web Development",
+        "description": "Creating responsive and powerful websites and web applications."
+      },
+      "mobile": {
+        "type": "Mobile Development",
+        "description": "Designing native and cross-platform mobile applications."
+      },
+      "desktop": {
+        "type": "Desktop Applications",
+        "description": "Developing desktop software for Windows, macOS, and Linux."
+      },
+      "api": {
+        "type": "Backend & API",
+        "description": "Creating robust APIs and scalable backend systems."
+      }
+    },
+    "projects": {
+      "title": "Recent Projects",
+      "web": {
+        "title": "Social Network",
+        "type": "Web Development"
+      },
+      "mobile": {
+        "title": "FitTrack Pro",
+        "type": "Mobile Development"
+      },
+      "desktop": {
+        "title": "DataViz Dashboard",
+        "type": "Desktop Applications"
+      },
+      "view": "View project"
+    },
+    "contact": {
+      "title": "Ready to bring your project to life?",
+      "description": "Contact me today to discuss your ideas and turn them into reality.",
+      "apply": "Start a project"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "About Me",
+      "description": {
+        "experience": "I am a Full Stack Developer with over 2 years of experience in creating innovative web and mobile applications.",
+        "stack": "I specialize in JavaScript, React, Node.js, and cloud technologies. I strive to create elegant and powerful solutions that meet the needs of users and businesses."
+      },
+      "values": {
+        "title": "My Values",
+        "list": [
+          "Continuous learning and technology monitoring",
+          "Code quality and best development practices",
+          "Collaboration and effective team communication",
+          "Creative problem solving",
+          "Attention to detail and user experience"
+        ]
+      },
+      "skills": {
+        "title": "Key Skills",
+        "list": [
+          "Frontend Development (React, Next.js)",
+          "Backend (Node.js, Express)",
+          "Mobile Development (React Native)",
+          "Databases (SQL, NoSQL)",
+          "Cloud Deployment",
+          "UI/UX Design"
+        ]
+      },
+      "badge": {
+        "experience": "2+ years of experience",
+        "title": "Full Stack Developer"
+      },
+      "technical": "Technical Skills"
+    },
+    "services": {
+      "title": "My Services",
+      "description": "I offer a full range of development services to meet all your digital needs."
+    },
+    "projects": {
+      "title": "My Projects",
+      "description": "Check out a selection of my most recent and innovative projects."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "description": "Feel free to contact me to discuss your project or ask any questions.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "theme": "Dark mode",
+      "language": "Language",
+      "navigation": "Navigation"
+    },
+    "notFound": {
+      "title": "Oops, page not found!",
+      "description": "Sorry, the page you're looking for doesn't exist or has been moved.",
+      "link": "Go to homepage"
+    }
+  },
+  "language": {
+    "select": "Select language...",
+    "search": "Search language...",
+    "notFound": "No language found."
+  },
+  "others": {
+    "success": "Message sent successfully!",
+    "error": "Error sending message.",
+    "captcha": "Please solve the CAPTCHA before submitting."
+  }
+}
