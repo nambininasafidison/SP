@@ -42,11 +42,11 @@
     "projects": {
       "title": "Recent Projects",
       "web": {
-        "title": "Social Network",
+        "title": "Portfolio",
         "type": "Web Development"
       },
       "mobile": {
-        "title": "FitTrack Pro",
+        "title": "Astrogen",
         "type": "Mobile Development"
       },
       "desktop": {

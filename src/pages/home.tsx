@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <HeroSection />
-      <ServicesSection />
+      <ServicesSection isTitleNecessary={true} />
       <ProjectsSection />
       <ContactCTA />
     </Layout>

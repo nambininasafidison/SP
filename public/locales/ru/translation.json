@@ -42,11 +42,11 @@
     "projects": {
       "title": "Недавние проекты",
       "web": {
-        "title": "Социальная сеть",
+        "title": "Портфéль",
         "type": "Веб-разработка"
       },
       "mobile": {
-        "title": "FitTrack Pro",
+        "title": "Astrogen",
         "type": "Мобильная разработка"
       },
       "desktop": {

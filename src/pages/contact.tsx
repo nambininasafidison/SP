@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, SendHorizonal } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 // import ReCAPTCHA from "react-google-recaptcha";
@@ -134,8 +134,8 @@ export default function ContactPage() {
                 onChange={handleCaptchaChange}
               /> */}
 
-              <Button type="submit" className="px-6 py-3">
-                {t("pages.contact.form.submit")}
+              <Button type="submit" className="p-4 flex gap-2 text-lg">
+                {t("pages.contact.form.submit")} <SendHorizonal />
               </Button>
 
               {status && <p className="mt-4 text-primary">{status}</p>}

@@ -1,12 +1,3 @@
-export const COLORS = {
-  background: "#0a0a0a",
-  foreground: "#ffffff",
-  primary: "#3b82f6",
-  secondary: "#10b981",
-  accent: "#8b5cf6",
-  muted: "#374151",
-};
-
 export const ROUTES = [
   { name: "home", path: "/" },
   { name: "about", path: import.meta.env.VITE_ABOUT_ROUTE },

@@ -17,7 +17,7 @@ export default function ServicesPage() {
           </p>
         </div>
       </div>
-      <ServicesSection />
+      <ServicesSection isTitleNecessary={false} />
       <ContactCTA />
     </Layout>
   );

@@ -20,34 +20,42 @@ import { useTranslation } from "react-i18next";
 
 const languages = [
   {
+    flag: "🇬🇧",
     value: "en",
     label: "English",
   },
   {
+    flag: "🇨🇵",
     value: "fr",
     label: "Français",
   },
   {
+    flag: "🇪🇦",
     value: "es",
     label: "Español",
   },
   {
+    flag: "🇮🇹",
     value: "it",
     label: "Italiano",
   },
   {
+    flag: "🇩🇪",
     value: "de",
     label: "Deutsch",
   },
   {
+    flag: "🇵🇹",
     value: "pt",
     label: "Português",
   },
   {
+    flag: "🇷🇺",
     value: "ru",
     label: "Русский",
   },
   {
+    flag: "🇲🇬",
     value: "mg",
     label: "Malagasy",
   },
@@ -73,9 +81,16 @@ export function SwitchLanguage(props: { className?: string }) {
           aria-expanded={open}
           className={cn("w-[200px] justify-between", props.className)}
         >
-          {value
-            ? languages.find((lang) => lang.value === value)?.label
-            : t("language.select")}
+          <p>
+            {value && (
+              <i className="mr-2">
+                {languages.find((lang) => lang.value === value)?.flag}
+              </i>
+            )}
+            {value
+              ? languages.find((lang) => lang.value === value)?.label
+              : t("language.select")}
+          </p>
           <ChevronsUpDown className="opacity-50 h-4 w-4" />
         </Button>
       </PopoverTrigger>
@@ -91,7 +106,7 @@ export function SwitchLanguage(props: { className?: string }) {
                   value={language.value}
                   onSelect={() => handleLanguageChange(language.value)}
                 >
-                  {language.label}
+                  <i className="mr-3">{language.flag}</i> {language.label}
                   <Check
                     className={cn(
                       "ml-auto  h-4 w-4",

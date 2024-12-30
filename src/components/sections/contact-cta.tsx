@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export function ContactCTA() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -24,6 +26,7 @@ export function ContactCTA() {
             className="px-8 py-3 bg-primary text-primary-foreground rounded-md hover:bg-accent-hover transition-colors inline-flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => navigate(import.meta.env.VITE_CONTACT_ROUTE)}
           >
             {t("sections.contact.apply")}{" "}
             <ArrowRight className="ml-2 h-5 w-5" />

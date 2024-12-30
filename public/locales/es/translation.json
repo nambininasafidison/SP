@@ -42,11 +42,11 @@
     "projects": {
       "title": "Proyectos Recientes",
       "web": {
-        "title": "Red Social",
+        "title": "Portafolio",
         "type": "Desarrollo Web"
       },
       "mobile": {
-        "title": "",
+        "title": "Astrogen",
         "type": "Desarrollo Móvil"
       },
       "desktop": {
