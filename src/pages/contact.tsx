@@ -1,8 +1,10 @@
+import MetaHelmet from "@/components/meta-helmet";
 import { Layout } from "@/components/sections/layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { metaConfigs } from "@/lib/constants";
 import emailjs from "@emailjs/browser";
 import { Mail, MapPin, Phone, SendHorizonal } from "lucide-react";
 import { useState } from "react";
@@ -56,93 +58,96 @@ export default function ContactPage() {
   };
 
   return (
-    <Layout>
-      <div className="py-24 bg-background min-h-screen flex flex-col justify-evenly">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">
-            {t("pages.contact.title")}
-          </h1>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <p className="text-xl mb-6 text-muted-foreground">
-                {t("pages.contact.description")}
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-center">
-                  <Mail className="h-6 w-6 mr-4 text-primary" />
-                  <span className="text-accent-foreground">
-                    nambininasafidison@outlook.com
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <Phone className="h-6 w-6 mr-4 text-primary" />
-                  <span className="text-accent-foreground">
-                    +261 34 78 398 61
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <MapPin className="h-6 w-6 mr-4 text-primary" />
-                  <span className="text-accent-foreground">
-                    Antananarivo, Madagascar
-                  </span>
-                </li>
-              </ul>
-            </div>
+    <>
+      <MetaHelmet {...metaConfigs.contact} />
+      <Layout>
+        <div className="py-24 bg-background min-h-screen flex flex-col justify-evenly">
+          <div className="container mx-auto px-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-primary">
+              {t("pages.contact.title")}
+            </h1>
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <p className="text-xl mb-6 text-muted-foreground">
+                  {t("pages.contact.description")}
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-center">
+                    <Mail className="h-6 w-6 mr-4 text-primary" />
+                    <span className="text-accent-foreground">
+                      nambininasafidison@outlook.com
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <Phone className="h-6 w-6 mr-4 text-primary" />
+                    <span className="text-accent-foreground">
+                      +261 34 78 398 61
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <MapPin className="h-6 w-6 mr-4 text-primary" />
+                    <span className="text-accent-foreground">
+                      Antananarivo, Madagascar
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
-              <div>
-                <Label htmlFor="name" className="block mb-2">
-                  {t("pages.contact.form.name")}
-                </Label>
-                <Input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div>
-                <Label htmlFor="email" className="block mb-2">
-                  {t("pages.contact.form.email")}
-                </Label>
-                <Input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div>
-                <Label htmlFor="message" className="block mb-2">
-                  {t("pages.contact.form.message")}
-                </Label>
-                <Textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></Textarea>
-              </div>
-              {/* <ReCAPTCHA
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div>
+                  <Label htmlFor="name" className="block mb-2">
+                    {t("pages.contact.form.name")}
+                  </Label>
+                  <Input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-2"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="email" className="block mb-2">
+                    {t("pages.contact.form.email")}
+                  </Label>
+                  <Input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-2"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="message" className="block mb-2">
+                    {t("pages.contact.form.message")}
+                  </Label>
+                  <Textarea
+                    id="message"
+                    rows={4}
+                    className="w-full px-4 py-2"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  ></Textarea>
+                </div>
+                {/* <ReCAPTCHA
                 sitekey="YOUR_SITE_KEY"
                 onChange={handleCaptchaChange}
               /> */}
 
-              <Button type="submit" className="p-4 flex gap-2 text-lg">
-                {t("pages.contact.form.submit")} <SendHorizonal />
-              </Button>
+                <Button type="submit" className="p-4 flex gap-2 text-lg">
+                  {t("pages.contact.form.submit")} <SendHorizonal />
+                </Button>
 
-              {status && <p className="mt-4 text-primary">{status}</p>}
-            </form>
+                {status && <p className="mt-4 text-primary">{status}</p>}
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 }
