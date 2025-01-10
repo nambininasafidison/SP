@@ -1,13 +1,15 @@
 import { ROUTES } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
 import { SwitchLanguage } from "../swicth-language";
 import { ToggleTheme } from "../ToggleTheme";
-import { useTranslation } from "react-i18next";
 
 export function NavBar() {
   const { t } = useTranslation();
+  const pathname = useLocation().pathname;
+  console.log(pathname);
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -28,7 +30,11 @@ export function NavBar() {
             <li key={route.path}>
               <Link
                 to={route.path}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className={`text-muted-foreground hover:text-foreground transition-colors ${
+                  pathname === route.path
+                    ? "text-primary font-medium"
+                    : "text-muted-foreground"
+                }`}
               >
                 {t(`routes.${route.name}`)}
               </Link>
