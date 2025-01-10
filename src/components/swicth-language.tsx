@@ -64,7 +64,7 @@ const languages = [
 export function SwitchLanguage(props: { className?: string }) {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState(i18n.language || "en");
+  const [value, setValue] = React.useState("en");
 
   const handleLanguageChange = (lang: string) => {
     i18n.changeLanguage(lang);
