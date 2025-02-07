@@ -1,10 +1,10 @@
 import { ROUTES } from "@/lib/constants";
 import { motion } from "framer-motion";
-import { Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { SwitchLanguage } from "../swicth-language";
 import { ToggleTheme } from "../ToggleTheme";
+import { NavSheet } from "./nav-sheet";
 
 export function NavBar() {
   const { t } = useTranslation();
@@ -46,12 +46,7 @@ export function NavBar() {
         <div className="flex gap-2">
           <ToggleTheme className="lg:flex hidden" />
           <SwitchLanguage className="lg:flex hidden" />
-          <Link
-            className="lg:hidden block"
-            to={import.meta.env.VITE_SETTINGS_ROUTE}
-          >
-            <Menu />
-          </Link>
+          <NavSheet />
         </div>
       </nav>
     </motion.header>

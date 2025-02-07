@@ -138,7 +138,7 @@ export default function ContactPage() {
                 onChange={handleCaptchaChange}
               /> */}
 
-                <Button type="submit" className="p-4 flex gap-2 text-lg">
+                <Button type="submit" className="p-3 flex gap-2">
                   {t("pages.contact.form.submit")} <SendHorizonal />
                 </Button>
 
