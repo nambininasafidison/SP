@@ -54,11 +54,6 @@ const languages = [
     value: "ru",
     label: "Русский",
   },
-  {
-    flag: "🇲🇬",
-    value: "mg",
-    label: "Malagasy",
-  },
 ];
 
 export function SwitchLanguage(props: { className?: string }) {
