@@ -3,21 +3,21 @@ import MetaHelmet from "@/components/meta-helmet";
 import { Layout } from "@/components/sections/layout";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+// import { Progress } from "@/components/ui/progress";
 import { metaConfigs } from "@/lib/constants";
 import { useTranslation } from "react-i18next";
 
 export default function AboutPage() {
   const { t } = useTranslation();
-  const skills = [
-    { name: "React", level: 90 },
-    { name: "Node.js", level: 85 },
-    { name: "TypeScript", level: 80 },
-    { name: "React Native", level: 80 },
-    { name: "SQL", level: 75 },
-    { name: "MongoDB", level: 75 },
-    { name: "Next.js", level: 65 },
-  ];
+  // const skills = [
+  //   { name: "React", level: 90 },
+  //   { name: "Node.js", level: 85 },
+  //   { name: "TypeScript", level: 80 },
+  //   { name: "React Native", level: 80 },
+  //   { name: "SQL", level: 75 },
+  //   { name: "MongoDB", level: 75 },
+  //   { name: "Next.js", level: 65 },
+  // ];
 
   const valuesList = t("pages.about.values.list", {
     returnObjects: true,
@@ -97,22 +97,21 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>{t("pages.about.technical")}</CardTitle>
               </CardHeader>
               <CardContent>
                 {skills.map((skill, index) => (
                   <div key={index} className="mb-4">
-                    <div className="flex justify-between mb-1">
+                    <div className="flex justify-between items-center">
                       <span>{skill.name}</span>
-                      <span>{skill.level}%</span>
+                      <Progress value={skill.level} className="w-1/2" />
                     </div>
-                    <Progress value={skill.level} className="w-full" />
                   </div>
                 ))}
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </Layout>
