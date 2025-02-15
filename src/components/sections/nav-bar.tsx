@@ -9,7 +9,6 @@ import { NavSheet } from "./nav-sheet";
 export function NavBar() {
   const { t } = useTranslation();
   const pathname = useLocation().pathname;
-  console.log(pathname);
   return (
     <motion.header
       initial={{ y: -100 }}
