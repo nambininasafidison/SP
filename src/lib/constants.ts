@@ -48,11 +48,4 @@ export const metaConfigs = {
       "The page you are looking for doesn't exist or has been moved. Return to the homepage.",
     keywords: "404, Page Not Found, Missing Page, Error, React",
   },
-  settings: {
-    title: "Settings | Personalize Your Experience",
-    description:
-      "Adjust your theme and language settings for a tailored user experience.",
-    keywords:
-      "Settings, Theme, Dark Mode, Language, Navigation, Preferences, Personalization",
-  },
 };
